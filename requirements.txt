@@ -17,4 +17,5 @@ joblib
 xgboost
 lightgbm
 seaborn
+optuna-integration[mlflow]
 -e .
