@@ -1,5 +1,6 @@
 [core]
     remote = localstore
+    autostage = true
 ['remote "storage"']
     url = s3://mlops-equipo-63/dvc-data
     region = us-east-2
