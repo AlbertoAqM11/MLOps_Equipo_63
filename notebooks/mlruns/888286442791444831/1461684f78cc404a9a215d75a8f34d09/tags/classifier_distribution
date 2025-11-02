@@ -1,1 +1,0 @@
-CategoricalDistribution(choices=('RandomForest', 'MLP', 'XGBoost', 'LightGBM'))
