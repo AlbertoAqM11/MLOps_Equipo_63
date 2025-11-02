@@ -3,5 +3,6 @@
 /cache
 /mlruns/
 /notebooks/mlruns/
+/data/raw/online_news_modified.csv
 *.pkl
 *.joblib
