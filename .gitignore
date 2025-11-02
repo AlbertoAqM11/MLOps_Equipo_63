@@ -4,7 +4,7 @@
 /config.local
 /tmp
 /cache
-/mlruns/
+mlruns/
 /notebooks/mlruns/
 /data/raw/online_news_modified.csv
 *.pkl

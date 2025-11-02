@@ -146,7 +146,8 @@ def retrain_and_evaluate_best(
             mlflow.set_registry_uri("")
 
     mlflow.set_experiment(experiment_name)
-
+    artifact_root = os.path.abspath("artifacts")
+    
     parent_run_id = None
     if parent_from_best_trial:
         parent_run_id = study.best_trial.system_attrs.get("mlflow_run_id")
