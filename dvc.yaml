@@ -1,0 +1,35 @@
+stages:
+  train:
+    cmd: python train.py
+    deps:
+      - train.py
+      - mlops_equipo_63/__init__.py
+      - mlops_equipo_63/pipeline.py
+      - mlops_equipo_63/Configuration.py
+      - mlops_equipo_63/load_and_preparation.py
+      - mlops_equipo_63/Split_and_Dummy.py
+      - mlops_equipo_63/Optuna_Study.py
+      - mlops_equipo_63/Retrain_and_Evaluate.py
+      - mlops_equipo_63/mlflow_utils.py
+      - mlops_equipo_63/reporting.py
+      - ${data.raw_path}
+    params:
+      - data.raw_path
+      - data.processed_dir
+      - train.target
+      - train.test_size
+      - train.random_state
+      - train.n_trials
+      - train.cv_folds
+      - track.experiment
+      - track.mlruns_dir
+    outs:
+      - ${data.processed_dir}/dataset_processed.csv
+    metrics:
+      - reports/metrics.json:
+          cache: false
+    plots:
+      - reports/confusion_matrix.png:
+          cache: false
+      - reports/feature_importance.png:
+          cache: false      

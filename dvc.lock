@@ -1,0 +1,77 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - path: data/raw/online_news_modified.csv
+      hash: md5
+      md5: 378efec5965400e8af2d93f1e79bf811
+      size: 22660806
+    - path: mlops_equipo_63/Configuration.py
+      hash: md5
+      md5: ee80766da4b8452f9a158ab56b494916
+      size: 658
+    - path: mlops_equipo_63/Optuna_Study.py
+      hash: md5
+      md5: f34b458d3767aa9ab488055d193aae34
+      size: 6247
+    - path: mlops_equipo_63/Retrain_and_Evaluate.py
+      hash: md5
+      md5: 93416799735673c62ef2eca1ad89e4a9
+      size: 11125
+    - path: mlops_equipo_63/Split_and_Dummy.py
+      hash: md5
+      md5: f76d9013d74db5e2697abd8c5f060acd
+      size: 3394
+    - path: mlops_equipo_63/__init__.py
+      hash: md5
+      md5: b648fa3684395996e2e18ce93dc2a302
+      size: 1277
+    - path: mlops_equipo_63/load_and_preparation.py
+      hash: md5
+      md5: b2815293df74ecc186d10dbc432ebd25
+      size: 2836
+    - path: mlops_equipo_63/mlflow_utils.py
+      hash: md5
+      md5: 4f2d2de6a54118c0d7086b6b28cdbe3e
+      size: 820
+    - path: mlops_equipo_63/pipeline.py
+      hash: md5
+      md5: ea6b722bcdcfff2771d866f4311f87b5
+      size: 4350
+    - path: mlops_equipo_63/reporting.py
+      hash: md5
+      md5: 84b32b817060c5986fec3398a896ea6a
+      size: 1790
+    - path: train.py
+      hash: md5
+      md5: 84cc789759ddfc6208407159cc3cf300
+      size: 1975
+    params:
+      params.yaml:
+        data.processed_dir: data/processed
+        data.raw_path: data/raw/online_news_modified.csv
+        track.experiment: Equipo63_Fase2
+        track.mlruns_dir: mlruns
+        train.cv_folds: 5
+        train.n_trials: 50
+        train.random_state: 42
+        train.target: shares
+        train.test_size: 0.2
+    outs:
+    - path: data/processed/dataset_processed.csv
+      hash: md5
+      md5: 94396283718516431ab1c18c05f46e5a
+      size: 20128970
+    - path: reports/confusion_matrix.png
+      hash: md5
+      md5: db18046502ac21196267f22c92bd53a2
+      size: 22468
+    - path: reports/feature_importance.png
+      hash: md5
+      md5: 37b23a965a7af240a50f22bf195d0781
+      size: 50640
+    - path: reports/metrics.json
+      hash: md5
+      md5: fac050aa973df599dd60ce9f07fc3cbe
+      size: 305

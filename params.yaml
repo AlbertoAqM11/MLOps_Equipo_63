@@ -1,0 +1,15 @@
+data:
+  raw_path: data/raw/online_news_modified.csv
+  processed_dir: data/processed
+
+train:
+  target: shares
+  test_size: 0.2
+  random_state: 42
+  n_trials: 50
+  cv_folds: 5
+  study_name: fase2_optuna_study_v1
+
+track:
+  experiment: Equipo63_Fase2
+  mlruns_dir: mlruns

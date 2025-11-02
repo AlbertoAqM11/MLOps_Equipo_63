@@ -20,6 +20,7 @@ from .reporting import (
     print_best_summary,
     print_final_metrics,
 )
+#from .pipeline import MLOpsPipeline
 
 __all__ = [
     # core config
