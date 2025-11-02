@@ -1,5 +1,5 @@
 {
   "classifier": "RandomForest",
-  "rf_n_estimators": 377,
+  "rf_n_estimators": 347,
   "rf_max_depth": 30
 }

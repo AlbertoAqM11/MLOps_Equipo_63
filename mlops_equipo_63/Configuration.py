@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Config:
-    data_path: str = "C:\\Users\\betoa\\Documents\\TEC\\MLOPS\\Gits\\Fase2\\MLOps_Equipo_63\\references\\online_news_modified.csv"
+    data_path: str = "data/raw/online_news_modified.csv"
 # original path: r"C:\Users\betoa\Documents\TEC\MLOPS\Gits\Fase2\MLOps_Equipo_63\references\online_news.csv"
     target_col: str = "shares"
     pos_label_threshold: int = 1400

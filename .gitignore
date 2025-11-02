@@ -1,6 +1,14 @@
 # Data
 /data/*
 !**/*.dvc
+/config.local
+/tmp
+/cache
+/mlruns/
+/notebooks/mlruns/
+/data/raw/online_news_modified.csv
+*.pkl
+*.joblib
 
 # Mac OS-specific storage files
 .DS_Store

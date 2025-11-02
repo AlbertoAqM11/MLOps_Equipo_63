@@ -1,5 +1,7 @@
 [core]
-    remote = storage
+    remote = localstore
 ['remote "storage"']
     url = s3://mlops-equipo-63/dvc-data
     region = us-east-2
+['remote "localstore"']
+    url = C:/DVCstore

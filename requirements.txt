@@ -20,4 +20,5 @@ seaborn
 optuna-integration[mlflow]
 dvc
 dvc-s3
+dvc[s3]
 -e .

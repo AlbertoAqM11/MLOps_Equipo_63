@@ -105,6 +105,7 @@ def run_optuna_study(
                 objective="binary",
                 random_state=random_state,
                 n_jobs=-1,
+                verbosity=0
             )
             steps = [("classifier", clf)]
         else:

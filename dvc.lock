@@ -9,12 +9,12 @@ stages:
       size: 22660806
     - path: mlops_equipo_63/Configuration.py
       hash: md5
-      md5: ee80766da4b8452f9a158ab56b494916
-      size: 658
+      md5: 3f4386cadf65bf3b33bf098fd1759095
+      size: 584
     - path: mlops_equipo_63/Optuna_Study.py
       hash: md5
-      md5: f34b458d3767aa9ab488055d193aae34
-      size: 6247
+      md5: 26a2c8cbf6afb2d20b9fd9fc9d8ff9db
+      size: 6276
     - path: mlops_equipo_63/Retrain_and_Evaluate.py
       hash: md5
       md5: 93416799735673c62ef2eca1ad89e4a9
@@ -65,13 +65,13 @@ stages:
       size: 20128970
     - path: reports/confusion_matrix.png
       hash: md5
-      md5: db18046502ac21196267f22c92bd53a2
-      size: 22468
+      md5: a3389e8ca089281d23f5ac9596cf6c0f
+      size: 22356
     - path: reports/feature_importance.png
       hash: md5
-      md5: 37b23a965a7af240a50f22bf195d0781
-      size: 50640
+      md5: 645bc796ef6649f73ffc27617fe6923a
+      size: 50627
     - path: reports/metrics.json
       hash: md5
-      md5: fac050aa973df599dd60ce9f07fc3cbe
+      md5: 2f8ed77657d3efa2f012dddac757df47
       size: 305
